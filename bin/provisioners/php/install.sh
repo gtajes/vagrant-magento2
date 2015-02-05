@@ -11,3 +11,4 @@ apt-get -y install php5 php5-common php5-mysql php5-dev php5-mcrypt php5-gd php5
 sed -i '/display_errors = Off/c display_errors = On' /etc/php5/apache2/php.ini
 sed -i '/error_reporting = E_ALL & ~E_DEPRECATED/c error_reporting = E_ALL | E_STRICT' /etc/php5/apache2/php.ini
 sed -i '/html_errors = Off/c html_errors = On' /etc/php5/apache2/php.ini
+sed -i '/;date.timezone =/c date.timezone = "UTC"' /etc/php5/apache2/php.ini
